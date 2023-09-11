@@ -17,5 +17,8 @@ public class Main
     
     String name = "Justin";
     System.out.println("My name is : " + name);
+    
+    final name = "Hassan";
+    System.out.println("My new name is : " + name);
   }
 }
