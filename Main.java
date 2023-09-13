@@ -22,5 +22,8 @@ public class Main
     
     final String newname = "Hassan";
     System.out.println("My new name is : " + newname);
+    
+    money = money / 2.0;
+    System.out.println("I bought some shoes and my new amount of money is : " + money);
   }
 }
