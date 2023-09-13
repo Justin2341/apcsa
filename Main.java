@@ -1,19 +1,12 @@
-public class Main {
-  public static void main(String[] args) {
-    System.out.print("Hello");
-    System.out.println(" world!"); 
-  }
-}
-
-
-
 public class Main
 {
   public static void main(String[] args)
   {
+    System.out.print("Hello");
+    System.out.println(" world!"); 
     int day;
     day = 4;
-    System.out.print("Days until next week ");
+    System.out.print("Days until next week: ");
     System.out.println(day);
     
     double money;
