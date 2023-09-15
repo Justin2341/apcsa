@@ -1,29 +1,24 @@
+import java.util.Scanner;
 public class Main
 {
   public static void main(String[] args)
   {
-    System.out.print("Hello");
-    System.out.println(" world!"); 
-    int day;
-    day = 4;
-    System.out.print("Days until next week: ");
-    System.out.println(day);
+    System.out.println("Welcome to the supermarket!" );
+    System.out.println("What would you like to buy?");
     
-    double money;
-    money = 35.4;
-    System.out.println("The amount is " + money);
-    
-    boolean hungry;
-    hungry = false;
-    System.out.println("Am I Hungry? " + hungry);
-    
-    String name = "Justin";
-    System.out.println("My name is : " + name);
-    
-    final String newname = "Hassan";
-    System.out.println("My new name is : " + newname);
-    
-    money = money / 2.0;
-    System.out.println("I bought some shoes and my new amount of money is : " + money);
+    int apples = 5;
+    double money = 20.0;
+    double appleprice = 3.5;
+    boolean bought = false;
+      
+    System.out.println("We have " + apples + " apples. They each cost $3.50. Would you like to buy one?");
+    Scanner decision = new Scanner(System.in);
+    String decision1 = decision.nextLine();
+    System.out.println("You have said " + decision1 + ". Let's buy one apple.");
+    bought = true;
+    money = money - appleprice;
+    System.out.println("You now have $" + money);
+    apples -= 1;
+    System.out.println("There are now " + apples + " apples");
   }
 }
