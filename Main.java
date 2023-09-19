@@ -23,7 +23,7 @@ public class Main
     
     int bananas = 10;
     int ppp = 2; // price per pound
-    double ppp1 = Double.valueOf(ppp);
+    double ppp1 = Double.valueOf(ppp); // // temporarily converts to a double
       
     System.out.println("We also have " + bananas + " pounds of bananas. It is $2 per pound. Would you like to buy a pound?");
     String decision2 = decision.nextLine();
