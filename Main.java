@@ -20,5 +20,17 @@ public class Main
     System.out.println("You now have $" + money);
     apples -= 1;
     System.out.println("There are now " + apples + " apples");
+    
+    int bananas = 10;
+    int ppp = 2; // price per pound
+    double ppp1 = Double.valueOf(ppp);
+      
+    System.out.println("We also have " + bananas + " pounds of bananas. It is $2 per pound. Would you like to buy a pound?");
+    String decision2 = decision.nextLine();
+    System.out.println("You have said " + decision2 + ". Let's buy a pound of bananas.");
+    money = money - ppp1;
+    System.out.println("You now have $" + money);
+    bananas -= 1;
+    System.out.println("There are now " + bananas + " pounds of bananas");
   }
 }
