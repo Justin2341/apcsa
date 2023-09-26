@@ -3,8 +3,11 @@ public class Main
 {
   public static void main(String[] args)
   {
+    Foodlist f = new Foodlist();
+    
     System.out.println("Welcome to the supermarket!" );
     System.out.println("What would you like to buy?");
+    f.list();
     
     int apples = 5;
     double money = 20.0;
