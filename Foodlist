@@ -1,0 +1,9 @@
+public class Foodlist
+{
+  private String food;
+  
+  public void list()
+  {
+    System.out.println("We have apples and bananas.");
+  }
+}
