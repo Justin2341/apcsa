@@ -1,0 +1,12 @@
+public class Foodlist
+{
+  private String food1;
+  private String food2;
+  
+  public Foodlist(String a, String b)
+  {
+    food1 = a;
+    food2 = b;
+    System.out.println("We have " + food1 + "and " + food2);
+  }
+}
