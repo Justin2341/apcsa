@@ -3,10 +3,14 @@ public class Foodlist
   private String food1;
   private String food2;
   
-  public Foodlist(String a, String b)
+  public Foodlist(String food1, String food2)
   {
-    food1 = a;
-    food2 = b;
+    this.food1 = food1;
+    this.food2 = food2;
+  }
+  
+  public Foodlist()
+  {
     System.out.println("We have " + food1 + "and " + food2);
   }
 }
