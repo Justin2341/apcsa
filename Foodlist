@@ -1,9 +1,16 @@
 public class Foodlist
 {
-  private String food;
+  private String food1;
+  private String food2;
   
-  public void list()
+  public Foodlist(String food1, String food2)
   {
-    System.out.println("We have apples and bananas.");
+    this.food1 = food1;
+    this.food2 = food2;
+  }
+  
+  public void Foodlist()
+  {
+    System.out.println("We have " + food1 + " and " + food2);
   }
 }
