@@ -3,13 +3,17 @@ public class Foodlist
   private String food1;
   private String food2;
   private String food3;
+  private double food1num;
+  private double food1price;
+  private double food2num;
+  private double food2price;
   
   public Foodlist(String food1, String food2)
   {
     this.food1 = food1;
     this.food2 = food2;
   }
-    
+  
   public Foodlist(String food1, String food2, String food3)
   {
     this.food1 = food1;
@@ -20,5 +24,20 @@ public class Foodlist
   public void Foodlist()
   {
     System.out.println("We have " + food1 + " and " + food2);
+  }
+  
+  public void Foodlist(int food1num, double food1price)
+  {
+    this.food1num = food1num;
+    this.food1price = food1price;
+    System.out.println("We have " + food1num + " " + food1 + " and they each cost $" + food1price + ". Would you like to buy one?");
+  }
+    
+  public void Foodlist(int food2num, double food2price, String c)
+  {
+    this.food2num = food2num;
+    this.food2price = food2price;
+    System.out.println("We have " + food2num + " " + food2 + " and they each cost $" + food2price + ". Would you like to buy one?");
+    System.out.println(c);
   }
 }
