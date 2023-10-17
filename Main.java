@@ -6,6 +6,8 @@ public class Main
     Foodlist f = new Foodlist("apples", "bananas");
     
     System.out.println("Welcome to the supermarket! \nWhat would you like to buy?" );
+    Food apple = new Food("apple", "savory", "red", 95);
+    System.out.println(apple);
     f.Foodlist();
     f.Foodlist(5, 3.50);
     
@@ -24,6 +26,8 @@ public class Main
     
     int bananas = 10;
       
+    Food banana = new Food("banana", "sweet", "yellow", 105);
+    System.out.println(banana);
     f.Foodlist(10, 2.0, "I love bananas!");
     String decision2 = decision.nextLine();
     System.out.println("You have said " + decision2 + ". Let's buy a banana.");
