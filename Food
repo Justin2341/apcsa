@@ -1,0 +1,23 @@
+public class Food
+{
+  private String taste;
+  private String color;
+  private int calories;
+  private String food;
+  
+  public Food(String food, String taste, String color, int calories)
+  {
+    this.food = food;
+    this.taste = taste;
+    this.color = color;
+    this.calories = calories;
+  }
+  
+  public String toString()
+  {
+    return "Food: " + food +
+    "\nTaste: " + taste + 
+    "\nColor: " + color + 
+    "\nCalores: " + calories;
+  }
+}
