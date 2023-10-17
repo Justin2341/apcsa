@@ -5,8 +5,7 @@ public class Main
   {
     Foodlist f = new Foodlist("apples", "bananas");
     
-    System.out.println("Welcome to the supermarket!" );
-    System.out.println("What would you like to buy?");
+    System.out.println("Welcome to the supermarket! \nWhat would you like to buy?" );
     f.Foodlist();
     f.Foodlist(5, 3.50);
     
