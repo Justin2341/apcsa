@@ -5,7 +5,8 @@ public class Main
   {
     Foodlist f = new Foodlist("apples", "bananas");
     
-    System.out.println("Welcome to the supermarket! \nWhat would you like to buy?" );
+    String welcome = new String("Welcome to the supermarket! \nWhat would you like to buy?");
+    System.out.println(welcome);
     Food apple = new Food("apple", "savory", "red", 95);
     System.out.println(apple);
     f.Foodlist();
