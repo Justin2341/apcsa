@@ -10,7 +10,7 @@ public class Main
     Food apple = new Food("apple", "savory", "red", 95);
     System.out.println(apple);
     f.Foodlist();
-    f.Foodlist(5, 3.50);
+    f.Foodlist(5, Math.abs(3.50));
     
     int apples = 5;
     double money = 20.0;
