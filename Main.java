@@ -18,23 +18,30 @@ public class Main
       
     Scanner decision = new Scanner(System.in);
     String decision1 = decision.nextLine();
-    System.out.println("You have said " + decision1 + ". Let's buy one apple.");
-    bought = true;
-    money = money - f.getfood1price();
-    System.out.println("You now have $" + money);
-    apples -= 1;
-    System.out.println("There are now " + apples + " apples");
+    if (decision1.equals("yes"))
+    {
+      bought = true;
+    }
+    if (bought == true)
+    {
+      System.out.println("You have said " + decision1 + ". Let's buy one apple.");
+      bought = true;
+      money = money - f.getfood1price();
+      System.out.println("You now have $" + money);
+      apples -= 1;
+      System.out.println("There are now " + apples + " apples");
     
-    int bananas = 10;
+      int bananas = 10;
       
-    Food banana = new Food("banana", "sweet", "yellow", 105);
-    System.out.println(banana);
-    f.Foodlist(10, 2.0, "I love bananas!");
-    String decision2 = decision.nextLine();
-    System.out.println("You have said " + decision2 + ". Let's buy a banana.");
-    money = money - f.getfood2price();
-    System.out.println("You now have $" + money);
-    bananas -= 1;
-    System.out.println("There are now " + bananas + " bananas");
+      Food banana = new Food("banana", "sweet", "yellow", 105);
+      System.out.println(banana);
+      f.Foodlist(10, 2.0, "I love bananas!");
+      String decision2 = decision.nextLine();
+      System.out.println("You have said " + decision2 + ". Let's buy a banana.");
+      money = money - f.getfood2price();
+      System.out.println("You now have $" + money);
+      bananas -= 1;
+      System.out.println("There are now " + bananas + " bananas");
+    }
   }
 }
