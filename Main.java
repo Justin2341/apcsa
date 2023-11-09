@@ -22,6 +22,14 @@ public class Main
     {
       bought = true;
     }
+    else if (decision1.equals("Yes"))
+    {
+      bought = true;
+    }
+    else
+    {
+      bought = false;
+    }
     if (bought == true)
     {
       System.out.println("You have said " + decision1 + ". Let's buy one apple.");
@@ -42,6 +50,10 @@ public class Main
       System.out.println("You now have $" + money);
       bananas -= 1;
       System.out.println("There are now " + bananas + " bananas");
+    }
+    else
+    {
+      System.out.println("Come back if you change your mind!");
     }
   }
 }
