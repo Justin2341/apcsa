@@ -20,4 +20,9 @@ public class Food
     "\nColor: " + color + 
     "\nCalores: " + calories;
   }
+  
+  public boolean equals(Food other)
+  {
+    return taste == other.taste;
+  }
 }
