@@ -7,7 +7,7 @@ public class Main
     
     String welcome = new String("Welcome to the supermarket! \nWhat would you like to buy?");
     System.out.println(welcome);
-    Food apple = new Food("apple", "savory", "red", 95);
+    Food apple = new Food("apple", "sweet", "red", 95);
     System.out.println(apple);
     f.Foodlist();
     f.Foodlist(5, Math.abs(3.50));
@@ -32,24 +32,32 @@ public class Main
     }
     if (bought == true)
     {
-      System.out.println("You have said " + decision1 + ". Let's buy one apple.");
-      bought = true;
-      money = money - f.getfood1price();
-      System.out.println("You now have $" + money);
-      apples -= 1;
-      System.out.println("There are now " + apples + " apples");
+      if (true && false || !false)
+      {
+        System.out.println("You have said " + decision1 + ". Let's buy one apple.");
+        bought = true;
+        money = money - f.getfood1price();
+        System.out.println("You now have $" + money);
+        apples -= 1;
+        System.out.println("There are now " + apples + " apples");
     
-      int bananas = 10;
+        int bananas = 10;
       
-      Food banana = new Food("banana", "sweet", "yellow", 105);
-      System.out.println(banana);
-      f.Foodlist(10, 2.0, "I love bananas!");
-      String decision2 = decision.nextLine();
-      System.out.println("You have said " + decision2 + ". Let's buy a banana.");
-      money = money - f.getfood2price();
-      System.out.println("You now have $" + money);
-      bananas -= 1;
-      System.out.println("There are now " + bananas + " bananas");
+        Food banana = new Food("banana", "sweet", "yellow", 105);
+        System.out.println(banana);
+        f.Foodlist(10, 2.0, "I love bananas!");
+        boolean comparison = (banana.equals(apple));
+        if (comparison)
+        {
+          System.out.println("Dont worry, both bananas and apples are sweet!");
+        }
+        String decision2 = decision.nextLine();
+        System.out.println("You have said " + decision2 + ". Let's buy a banana.");
+        money = money - f.getfood2price();
+        System.out.println("You now have $" + money);
+        bananas -= 1;
+        System.out.println("There are now " + bananas + " bananas");
+      }
     }
     else
     {
