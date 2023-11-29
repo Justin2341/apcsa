@@ -34,7 +34,10 @@ public class Main
     {
       if (true && false || !false)
       {
-        System.out.println("You have said " + decision1 + ". Let's buy one apple.");
+        for (int i = 0; i < 1; i++)
+        {
+          System.out.println("You have said " + decision1 + ". Let's buy one apple.");
+        }
         bought = true;
         money = money - f.getfood1price();
         System.out.println("You now have $" + money);
