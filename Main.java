@@ -18,6 +18,18 @@ public class Main
       
     Scanner decision = new Scanner(System.in);
     String decision1 = decision.nextLine();
+    while (!(decision1.equals("yes") || decision1.equals("Yes")))
+    {
+      while (bought == false)
+      {
+        System.out.println("Shop here or else...");
+        decision1 = decision.nextLine();
+        if (decision1.equals("yes") || decision1.equals("Yes"))
+        {
+          bought = true;
+        }
+      }
+    }
     if (decision1.equals("yes"))
     {
       bought = true;
